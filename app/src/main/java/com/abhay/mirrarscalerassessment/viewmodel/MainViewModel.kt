@@ -1,6 +1,7 @@
 package com.abhay.mirrarscalerassessment.viewmodel
 
 import android.content.Context
+import android.util.Log
 import android.view.View
 import androidx.databinding.ObservableField
 import androidx.lifecycle.MutableLiveData
@@ -51,14 +52,15 @@ class MainViewModel(private val repository: Repository,private val roomRepositor
     fun setRandomNasaApodEntityFromRoomDB(){
         CoroutineScope(Dispatchers.IO).launch{
             val nasaApodResponseEntity = roomRepository.getRandomNasaApod()
+            Log.e("TAG!!","$nasaApodResponseEntity")
             randomNasaApodResponseEntity.postValue(nasaApodResponseEntity)
         }
     }
 
     override fun setThumbnailState(){
         webViewVisibility.set(View.GONE)
-        playButtonVisibility.set(View.VISIBLE)
-        thumbnailImageViewVisibility.set(View.GONE)
+        playButtonVisibility.set(View.GONE)
+        thumbnailImageViewVisibility.set(View.VISIBLE)
     }
     override fun setVideoState(){
         webViewVisibility.set(View.GONE)

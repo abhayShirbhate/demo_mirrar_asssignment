@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity(), IOnMainActivityListener {
         setContentView(mainBinding.root)
         initView()
         setLiveDataObserver()
-        viewModel.getApiData(this, 100)
+        viewModel.getApiData(this, 40)
 
 
     }

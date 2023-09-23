@@ -12,11 +12,15 @@ import com.bumptech.glide.Glide
 object MainBindingAdapter {
 
     @JvmStatic
-    @BindingAdapter("app:imageUrl")
-    fun ImageView.imageUrl(imageUrl: String?) {
-        imageUrl?.let {
+    @BindingAdapter("app:imageUrl","app:url")
+    fun ImageView.imageUrl(imageUrl: String?,url: String?) {
+        if (imageUrl!=null) {
             Glide.with(context)
                 .load(imageUrl)
+                .into(this)
+        }else if (url != null){
+            Glide.with(context)
+                .load(url)
                 .into(this)
         }
     }

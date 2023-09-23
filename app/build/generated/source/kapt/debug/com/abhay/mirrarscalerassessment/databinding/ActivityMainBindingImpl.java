@@ -14,37 +14,41 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.media_layout, 7);
-        sViewsWithIds.put(R.id.progressBar, 8);
+        sViewsWithIds.put(R.id.media_layout, 8);
+        sViewsWithIds.put(R.id.scrollView, 9);
+        sViewsWithIds.put(R.id.progressBar, 10);
     }
     // views
     @NonNull
     private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     @NonNull
-    private final android.widget.FrameLayout mboundView6;
+    private final android.widget.FrameLayout mboundView7;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 4
+            , (android.widget.TextView) bindings[6]
             , (android.widget.TextView) bindings[5]
-            , (android.widget.FrameLayout) bindings[7]
+            , (android.widget.FrameLayout) bindings[8]
             , (android.widget.ImageView) bindings[3]
-            , (android.widget.ProgressBar) bindings[8]
+            , (android.widget.ProgressBar) bindings[10]
+            , (android.widget.ScrollView) bindings[9]
             , (android.widget.ImageView) bindings[1]
             , (android.widget.TextView) bindings[4]
             , (android.webkit.WebView) bindings[2]
             );
+        this.dateTextView.setTag(null);
         this.explanationTextView.setTag(null);
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
-        this.mboundView6 = (android.widget.FrameLayout) bindings[6];
-        this.mboundView6.setTag(null);
+        this.mboundView7 = (android.widget.FrameLayout) bindings[7];
+        this.mboundView7.setTag(null);
         this.playButton.setTag(null);
         this.thumbnailImageView.setTag(null);
         this.titleTextView.setTag(null);
@@ -185,6 +189,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         int androidxDatabindingViewDataBindingSafeUnboxViewModelPlayButtonVisibilityGet = 0;
         com.abhay.mirrarscalerassessment.listeners.IOnMainActivityHandler iOnHandler = mIOnHandler;
         androidx.databinding.ObservableField<java.lang.Integer> viewModelPlayButtonVisibility = null;
+        java.lang.String nasaApodResponseEntityDate = null;
         java.lang.Integer viewModelProgressDialogVisibilityGet = null;
         java.lang.Integer viewModelPlayButtonVisibilityGet = null;
         java.lang.String nasaApodResponseEntityExplanation = null;
@@ -204,6 +209,8 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
                     nasaApodResponseEntityUrl = nasaApodResponseEntity.getUrl();
                     // read nasaApodResponseEntity.thumbnailUrl
                     nasaApodResponseEntityThumbnailUrl = nasaApodResponseEntity.getThumbnailUrl();
+                    // read nasaApodResponseEntity.date
+                    nasaApodResponseEntityDate = nasaApodResponseEntity.getDate();
                     // read nasaApodResponseEntity.explanation
                     nasaApodResponseEntityExplanation = nasaApodResponseEntity.getExplanation();
                 }
@@ -290,25 +297,26 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         if ((dirtyFlags & 0x90L) != 0) {
             // api target 1
 
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.dateTextView, nasaApodResponseEntityDate);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.explanationTextView, nasaApodResponseEntityExplanation);
-            com.abhay.mirrarscalerassessment.bindingAdapter.MainBindingAdapter.imageUrl(this.thumbnailImageView, nasaApodResponseEntityThumbnailUrl);
+            com.abhay.mirrarscalerassessment.bindingAdapter.MainBindingAdapter.imageUrl(this.thumbnailImageView, nasaApodResponseEntityThumbnailUrl, nasaApodResponseEntityUrl);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.titleTextView, nasaApodResponseEntityTitle);
             com.abhay.mirrarscalerassessment.bindingAdapter.MainBindingAdapter.videoUrl(this.webView, nasaApodResponseEntityUrl);
         }
         if ((dirtyFlags & 0xc1L) != 0) {
             // api target 1
 
-            this.mboundView6.setVisibility(androidxDatabindingViewDataBindingSafeUnboxViewModelProgressDialogVisibilityGet);
-        }
-        if ((dirtyFlags & 0xa0L) != 0) {
-            // api target 1
-
-            com.abhay.mirrarscalerassessment.bindingAdapter.MainBindingAdapter.playButtonListener(this.playButton, iOnHandler);
+            this.mboundView7.setVisibility(androidxDatabindingViewDataBindingSafeUnboxViewModelProgressDialogVisibilityGet);
         }
         if ((dirtyFlags & 0xc4L) != 0) {
             // api target 1
 
             this.playButton.setVisibility(androidxDatabindingViewDataBindingSafeUnboxViewModelPlayButtonVisibilityGet);
+        }
+        if ((dirtyFlags & 0xa0L) != 0) {
+            // api target 1
+
+            com.abhay.mirrarscalerassessment.bindingAdapter.MainBindingAdapter.playButtonListener(this.playButton, iOnHandler);
         }
         if ((dirtyFlags & 0xc8L) != 0) {
             // api target 1

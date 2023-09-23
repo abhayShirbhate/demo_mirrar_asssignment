@@ -8,10 +8,12 @@ drawable ic_launcher_foreground
 drawable ic_play_button
 drawable ic_refresh_button
 id action_refresh_button
+id dateTextView
 id explanationTextView
 id media_layout
 id playButton
 id progressBar
+id scrollView
 id thumbnailImageView
 id titleTextView
 id webView

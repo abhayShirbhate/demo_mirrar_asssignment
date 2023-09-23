@@ -8,6 +8,7 @@ import android.webkit.WebView;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,6 +24,9 @@ import java.lang.Object;
 
 public abstract class ActivityMainBinding extends ViewDataBinding {
   @NonNull
+  public final TextView dateTextView;
+
+  @NonNull
   public final TextView explanationTextView;
 
   @NonNull
@@ -33,6 +37,9 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
 
   @NonNull
   public final ProgressBar progressBar;
+
+  @NonNull
+  public final ScrollView scrollView;
 
   @NonNull
   public final ImageView thumbnailImageView;
@@ -53,14 +60,16 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   protected IOnMainActivityHandler mIOnHandler;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView explanationTextView, FrameLayout mediaLayout, ImageView playButton,
-      ProgressBar progressBar, ImageView thumbnailImageView, TextView titleTextView,
-      WebView webView) {
+      TextView dateTextView, TextView explanationTextView, FrameLayout mediaLayout,
+      ImageView playButton, ProgressBar progressBar, ScrollView scrollView,
+      ImageView thumbnailImageView, TextView titleTextView, WebView webView) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.dateTextView = dateTextView;
     this.explanationTextView = explanationTextView;
     this.mediaLayout = mediaLayout;
     this.playButton = playButton;
     this.progressBar = progressBar;
+    this.scrollView = scrollView;
     this.thumbnailImageView = thumbnailImageView;
     this.titleTextView = titleTextView;
     this.webView = webView;

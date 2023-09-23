@@ -2645,6 +2645,7 @@ id custom
 id customPanel
 id cut
 id dataBinding
+id dateTextView
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
