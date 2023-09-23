@@ -1,0 +1,28 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color lightGrey
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable ic_play_button
+drawable ic_refresh_button
+id action_refresh_button
+id explanationTextView
+id media_layout
+id playButton
+id progressBar
+id thumbnailImageView
+id titleTextView
+id webView
+layout activity_main
+menu custom_menu
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string no_internet_connection_msg
+string some_thing_went_wrong_msg
+style Base.Theme.MirrarScalerAssessment
+style Theme.MirrarScalerAssessment
+xml backup_rules
+xml data_extraction_rules

@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MirrarScalerAssessment" parent="Theme.Material3.DayNight">
+        <!-- Customize ActionBar attributes -->
+        <item name="colorPrimary">@color/design_default_color_on_primary</item>
+        <item name="colorOnPrimary">@color/design_default_color_background</item>
+        <!-- ... other attributes ... -->
+    </style>
+
+    <style name="Theme.MirrarScalerAssessment" parent="Base.Theme.MirrarScalerAssessment" />
+</resources>

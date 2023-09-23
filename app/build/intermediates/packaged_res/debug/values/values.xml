@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="lightGrey">#4DBDBABA</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Mirrar Scaler Assessment</string>
+    <string name="no_internet_connection_msg">Please check internet connection and try again</string>
+    <string name="some_thing_went_wrong_msg">Some thing went wrong</string>
+    <style name="Base.Theme.MirrarScalerAssessment" parent="Theme.Material3.DayNight">
+        
+        <item name="colorPrimary">@color/design_default_color_on_primary</item>
+        <item name="colorOnPrimary">@color/design_default_color_background</item>
+        
+    </style>
+    <style name="Theme.MirrarScalerAssessment" parent="Base.Theme.MirrarScalerAssessment"/>
+</resources>
