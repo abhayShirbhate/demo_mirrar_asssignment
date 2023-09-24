@@ -17,7 +17,7 @@ To get started with this project, follow these steps:
 ### Prerequisites
 
 - Android Studio: Make sure you have Android Studio installed on your development machine.
-- NASA API Key: You'll need a NASA API key to access their data. You can obtain a key by signing up at [NASA API Portal](https://api.nasa.gov/).
+- NASA API Key: You'll need a NASA API key to access their data. You can obtain a key by signing up at https://api.nasa.gov/
 
 ### Installation
 
