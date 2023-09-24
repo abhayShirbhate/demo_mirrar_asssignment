@@ -21,10 +21,28 @@ To get started with this project, follow these steps:
 
 ### Installation
 
-1. Clone the project repository to your local machine:
+-  Clone the project repository to your local machine:
 
    ```bash
    git clone https://github.com/abhayShirbhate/demo_mirrar_asssignment.git
+
+## Generating NASA API Key
+
+-  Visit the NASA API website at [https://api.nasa.gov/](https://api.nasa.gov/).
+
+- Create an account and log in.
+
+- Generate a new API key and give it a name or description.
+
+- Copy the generated API key to your clipboard.
+
+-  Create a Gradle property file to store your API key. You should name this file `gradle.properties` and place it in the root directory of your project.
+
+-  Open the `gradle.properties` file and add your API key like this:
+
+- apiKey=YOUR_API_KEY_HERE
+
+- Replace `YOUR_API_KEY_HERE` with your actual API key.
 
 ## Getting Started
 
