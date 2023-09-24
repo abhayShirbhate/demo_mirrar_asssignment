@@ -6,6 +6,7 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
+import com.abhay.mirrarscalerassessment.R
 import com.abhay.mirrarscalerassessment.listeners.IOnMainActivityHandler
 import com.bumptech.glide.Glide
 
@@ -17,10 +18,12 @@ object MainBindingAdapter {
         if (imageUrl!=null) {
             Glide.with(context)
                 .load(imageUrl)
+                .placeholder(R.drawable.img_loading)
                 .into(this)
         }else if (url != null){
             Glide.with(context)
                 .load(url)
+                .placeholder(R.drawable.img_loading)
                 .into(this)
         }
     }

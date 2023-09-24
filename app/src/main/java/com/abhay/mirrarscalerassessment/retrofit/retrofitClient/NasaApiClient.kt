@@ -1,6 +1,8 @@
 package com.abhay.mirrarscalerassessment.retrofit.retrofitClient
 
 
+import androidx.core.os.BuildCompat
+import com.abhay.mirrarscalerassessment.BuildConfig
 import com.abhay.mirrarscalerassessment.retrofit.service.NasaApiService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -21,6 +23,6 @@ class NasaApiClient {
 
     companion object {
         private const val BASE_URL = "https://api.nasa.gov/"
-        const val API_KEY = "1RGffRdAAo4qVyhgoi0CwVUd6Vj2nMjVZ9yNqfaa"
+        const val API_KEY = BuildConfig.API_KEY
     }
 }
