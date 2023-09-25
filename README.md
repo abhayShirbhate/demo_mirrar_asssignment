@@ -35,9 +35,7 @@ To get started with this project, follow these steps:
 - Generate a new API key and give it a name or description.
 
 - Copy the generated API key to your clipboard.
-
--  Create a Gradle property file to store your API key. You should name this file `gradle.properties` and place it in the root directory of your project.
-
+- 
 -  Open the `gradle.properties` file and add your API key like this:
 
 - apiKey=YOUR_API_KEY_HERE
