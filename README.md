@@ -42,30 +42,6 @@ To get started with this project, follow these steps:
 
 - Replace `YOUR_API_KEY_HERE` with your actual API key.
 
-## Getting Started
-
-To get started with this project, follow these steps:
-
-### Prerequisites
-
-- Android Studio: Make sure you have Android Studio installed on your development machine.
-- NASA API Key: You'll need a NASA API key to access their data. You can obtain a key by signing up at [NASA API Portal](https://api.nasa.gov/).
-
-### Installation
-
-1. Clone the project repository to your local machine:
-
-   ```bash
-   git clone https://github.com/abhayShirbhate/demo_mirrar_asssignment.git
-
-- Open the project in Android Studio.
-
-- Add your NASA API key to the project:
-
-- Open the NasaApiClient.kt file.
-- Replace const val API_KEY = "YOUR_API_KEY" with your actual NASA API key.
-- Build and run the project on an Android emulator or physical device.
-
 ### Code Overview
 
 - activity_main.xml: XML layout file for the main activity, defining the UI components and their bindings.
